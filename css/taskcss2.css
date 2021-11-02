@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+}
+
+body{
+  background: #485460;
+}
+
+.wrapper{
+  width: auto;;
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  flex-wrap: wrap;
+}
+
+.wrapper .pricing_table{
+  width: 300px;
+      box-shadow: 1px 1px 20px rgba(0,0,0,0.5);
+    transition: 0.9s;
+  background: #ea542f;
+  margin: 10px;
+  padding: 20px 10px 40px;
+  text-align: center;
+  border-radius: 15px;
+    float: left;
+}
+
+.wrapper .pricing_table h1{
+  padding: 0 0 50px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #fff;
+}
+
+.wrapper .pricing_table .content{
+  background: #fff;
+  border-radius: 5px;
+  padding: 40px 0;
+  position: relative;
+}
+
+.wrapper .pricing_table .content ul li{
+  list-style: none;
+  margin: 15px 0;
+  font-size: 15px;
+  position: relative;
+}
+
+.wrapper .pricing_table .content .price{
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  color: #fff;
+  font-size: 28px;
+  background: #a32d10;
+  border-radius: 50%;
+}
+
+.wrapper .pricing_table .content .btn{
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.wrapper .pricing_table .content .btn a{
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  font-size: 20px;
+  background: #a32d10;
+  border-radius: 5px;
+}
+
+.fa-check{
+  margin-right: 5px;
+  color: #46ed67;
+}
+
+.fa-times{
+  margin-right: 5px;
+  color: #e81823;
+}
+
+.pricing_table:hover{
+    background: #800000	;
+    color: black;
+    box-shadow: 0 0 15px rgba(0,0,0,1);
+    transform: scale(1.1);
+    z-index: 1;
+    border-radius: 15px;
+}
